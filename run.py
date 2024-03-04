@@ -3,7 +3,7 @@ import datetime
 
 def get_vacation_year():
     """
-    The user selects which vacation year they want to calculate
+    The user selects which vacation year they want to calculate.
     """
     while True:
         global vacation_year
@@ -30,7 +30,7 @@ def validate_vacation_year(vacation_year):
 
 def get_employment_date():
     """
-    Get employment date from the user
+    Get employment date from the user.
     """
     while True:
         global employment_date
@@ -55,12 +55,42 @@ def validate_employment_date(employment_date):
     return True
 
 
+def get_holiday_entitlement():
+    """
+    Get holiday entitlement from the user.
+    """
+    while True:
+        global holiday_entitlement
+        holiday_entitlement = input("Enter the number of your holiday_entitlement (e.g. 25):")
+
+        if validate_holiday_entitlement(holiday_entitlement):
+            print(f"Your holiday entitlement is: {holiday_entitlement}")
+            break
+
+
+def validate_holiday_entitlement(holiday_entitlement):
+    """
+    Validate holiday entitlement date format.
+    """
+    try:
+        holiday_entitlement = int(holiday_entitlement)
+        if holiday_entitlement < 25:
+            print("Holiday entitlement must be at least 25 days.")
+            return False
+    except ValueError:
+        print("Incorrect holiday entitlement format, please try again.")
+        return False
+
+    return True
+
+
 def main():
     """
     Run all program functions
     """
     get_vacation_year()
     get_employment_date()
+    get_holiday_entitlement()
 
 
 print("Welcome to the Vacation Calculator!\n")

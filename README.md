@@ -40,6 +40,9 @@
 
 https://stackoverflow.com/questions/74091035/how-do-i-validate-a-date-format-with-python
 
+- I used the math module to be able to round up the result of the paid vacation days
+
+https://www.w3schools.com/python/ref_math_ceil.asp
 
 
 

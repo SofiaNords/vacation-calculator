@@ -28,6 +28,10 @@
 
 - The function calculates how many employment days the user got during the vacation year by comparing the employment date with the last day of the vacation year.
 
+#### Calculate paid vacation days
+
+- The function calculates how many paid vacation days the user will get. It reduces leave of absence from total employment days. In the next step, the remaining days are related to the days in the current vacation year and are multiplied by the vacation entitlement. At last the result is being rounded up just as it should be according to the law.
+
 ## Libraries
 
 ### Python Standard Libraries

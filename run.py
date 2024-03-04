@@ -1,4 +1,5 @@
 import datetime
+import math
 
 
 def get_vacation_year():
@@ -149,6 +150,38 @@ def calculate_employment_days(employment_date):
         print(f"Your employment days this year is {emp_days} days")
 
 
+def calculate_paid_vacation_days(emp_days):
+    """
+    The calculation determines how many paid vacation days the user
+    will receive by subtracting leave of absence days from total
+    employment days.
+    In the next step, the remaining days are related to the days in
+    the current vacation year and multiplied by the vacation
+    entitlement before being rounded up.
+    """
+    print(f"This is employ_days before converting to int {emp_days}")
+    print(type(emp_days))
+    employ_days = int(emp_days.days)
+    print(f"This is employ_days after converting to int {employ_days}")
+    print(type(employ_days))
+    print(type(absence_data))
+
+    days_of_vac_year = last_day_vac_year - last_day_last_vac_year
+    print(f"The number of days this vacation year is: {days_of_vac_year}")
+    print(type(days_of_vac_year))
+    days_of_vac_year_int = int(days_of_vac_year.days)
+    print(f"This is days of vac year after converting to int \
+    {days_of_vac_year_int}")
+    print(type(days_of_vac_year_int))
+
+    paid_vacation_days = (
+        employ_days - int(absence_data))/days_of_vac_year_int *\
+        int(holiday_entitlement)
+    rounded_up_paid_vac_days = math.ceil(paid_vacation_days)
+    print(f"You will get {rounded_up_paid_vac_days} paid vacation days \
+{vacation_year}")
+
+
 def main():
     """
     Run all program functions
@@ -158,6 +191,7 @@ def main():
     get_holiday_entitlement()
     get_absence_data()
     calculate_employment_days(employment_date)
+    calculate_paid_vacation_days(emp_days)
 
 
 print("Welcome to the Vacation Calculator!\n")

@@ -20,6 +20,10 @@
 
 - When the user enters their holiday entitlement the input is converted to an integer, the validate function controls that it is at least 25 days (which is the minimum by law) and that the format is correct.
 
+#### Enter and validate absence data
+
+- When the user enters their absence data the input is converted to an integer. The validate function controls the format of the input and print out if it's not valid.
+
 ## Libraries
 
 ### Python Standard Libraries

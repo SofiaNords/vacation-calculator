@@ -1,3 +1,12 @@
+## Features
+
+### Existing features
+
+#### Start the calculator
+
+- Welcomes the user
+- Explains the conditions
+
 ## Libraries
 
 ### Python Standard Libraries

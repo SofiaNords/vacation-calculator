@@ -7,8 +7,8 @@ def get_vacation_year():
     """
     while True:
         global vacation_year
-        vacation_year =
-        input("Enter the vacation year you want to calculate (YYYY):")
+        vacation_year = input(
+            "Enter the vacation year you want to calculate (YYYY):")
 
         if validate_vacation_year(vacation_year):
             print(f"Thank you, your vacation year is {vacation_year}.")
@@ -35,4 +35,9 @@ def main():
     get_vacation_year()
 
 
+print("Welcome to the Vacation Calculator!\n")
+print("This is a calculator that computes how many paid vacation days\
+you can expect to have this summer.\n")
+print("It is based on your coverage under Swedish vacation law and\
+considers the previous year as the accrual year.\n")
 main()

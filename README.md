@@ -1,3 +1,14 @@
+## Libraries
+
+### Python Standard Libraries
+
+- I used the datetime module to to parse vacation year into a datetime object and to be able to validate the input year format.
+
+https://stackoverflow.com/questions/74091035/how-do-i-validate-a-date-format-with-python
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,

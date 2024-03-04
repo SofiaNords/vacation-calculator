@@ -16,6 +16,10 @@
 
 - When the user enters the employment date, the input is validated to ensure that it is in the correct date format.
 
+#### Enter and validate holiday entitlement
+
+- When the user enters their holiday entitlement the input is converted to an integer, the validate function controls that it is at least 25 days (which is the minimum by law) and that the format is correct.
+
 ## Libraries
 
 ### Python Standard Libraries

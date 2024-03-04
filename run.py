@@ -61,7 +61,8 @@ def get_holiday_entitlement():
     """
     while True:
         global holiday_entitlement
-        holiday_entitlement = input("Enter the number of your holiday_entitlement (e.g. 25):")
+        holiday_entitlement = input(
+            "Enter the number of your holiday_entitlement (e.g. 25):")
 
         if validate_holiday_entitlement(holiday_entitlement):
             print(f"Your holiday entitlement is: {holiday_entitlement}")
@@ -70,7 +71,7 @@ def get_holiday_entitlement():
 
 def validate_holiday_entitlement(holiday_entitlement):
     """
-    Validate holiday entitlement date format.
+    Validates the holiday entitlement format and controls the minimum number of days (25).
     """
     try:
         holiday_entitlement = int(holiday_entitlement)

@@ -71,7 +71,8 @@ def get_holiday_entitlement():
 
 def validate_holiday_entitlement(holiday_entitlement):
     """
-    Validates the holiday entitlement format and controls the minimum number of days (25).
+    Validates the holiday entitlement format and controls the minimum
+    number of days (25).
     """
     try:
         holiday_entitlement = int(holiday_entitlement)
@@ -85,6 +86,38 @@ def validate_holiday_entitlement(holiday_entitlement):
     return True
 
 
+def get_absence_data():
+    """
+    Get leave of absence data from the user.
+    """
+    while True:
+        global absence_data
+        absence_data = input(
+            "Enter the number of calender days with full leave of \
+absence since !!!!!:"
+            )
+
+        if validate_absence_data(absence_data):
+            print(
+                f"Your number of calender days with full leave of \
+absence is: {absence_data}"
+                )
+            break
+
+
+def validate_absence_data(absence_data):
+    """
+    Validate absence data format.
+    """
+    try:
+        absence_data = int(absence_data)
+    except ValueError:
+        print("Incorrect absence data format, please try again.")
+        return False
+
+    return True
+
+
 def main():
     """
     Run all program functions
@@ -92,6 +125,7 @@ def main():
     get_vacation_year()
     get_employment_date()
     get_holiday_entitlement()
+    get_absence_data()
 
 
 print("Welcome to the Vacation Calculator!\n")

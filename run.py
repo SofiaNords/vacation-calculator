@@ -14,6 +14,9 @@ def get_vacation_year():
             print(f"Thank you, your vacation year is {vacation_year}.")
             break
 
+    global last_vac_year
+    last_vac_year = int(vacation_year) - 1
+
 
 def validate_vacation_year(vacation_year):
     """
@@ -93,8 +96,8 @@ def get_absence_data():
     while True:
         global absence_data
         absence_data = input(
-            "Enter the number of calender days with full leave of \
-absence since -04-01:"
+            f"Enter the number of calender days with full leave of \
+absence since {last_vac_year}-04-01:"
             )
 
         if validate_absence_data(absence_data):
@@ -124,9 +127,6 @@ def calculate_employment_days(employment_date):
     employment date and last day of vacation of the vacation year.
     """
     employment_date = datetime.datetime.strptime(employment_date, "%Y-%m-%d")
-
-    global last_vac_year
-    last_vac_year = int(vacation_year) - 1
 
     vac_year = str(vacation_year)
 

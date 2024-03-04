@@ -8,6 +8,14 @@
 - Explains the conditions
 - Let the user enter the vacation year
 
+#### Select and validate vacation year
+
+- When the user enters the vacation year, the input is validated to ensure that it is in the correct date format.
+
+#### Enter and validate employment date
+
+- When the user enters the employment date, the input is validated to ensure that it is in the correct date format.
+
 ## Libraries
 
 ### Python Standard Libraries

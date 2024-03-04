@@ -94,7 +94,7 @@ def get_absence_data():
         global absence_data
         absence_data = input(
             "Enter the number of calender days with full leave of \
-absence since !!!!!:"
+absence since -04-01:"
             )
 
         if validate_absence_data(absence_data):
@@ -118,6 +118,35 @@ def validate_absence_data(absence_data):
     return True
 
 
+def calculate_employment_days(employment_date):
+    """
+    Calculate how many employment days the user got by comparing
+    employment date and last day of vacation of the vacation year.
+    """
+    employment_date = datetime.datetime.strptime(employment_date, "%Y-%m-%d")
+
+    global last_vac_year
+    last_vac_year = int(vacation_year) - 1
+
+    vac_year = str(vacation_year)
+
+    global last_day_vac_year
+    last_day_vac_year = datetime.datetime.strptime(f"{vac_year}-04-01", "%Y-%m-%d")
+
+    global last_day_last_vac_year
+    last_day_last_vac_year = datetime.datetime.strptime(f"{last_vac_year}-04-01", "%Y-%m-%d")
+    
+    if employment_date <= datetime.datetime(int(last_vac_year), 4, 1):
+        global emp_days
+        emp_days = last_day_vac_year - last_day_last_vac_year
+        print(f"Your employment days this year is {emp_days} days")
+    else:
+        print(f"Vacation year is {vacation_year}")
+        print(f"Last day vacation year is {last_day_vac_year}")
+        emp_days = last_day_vac_year - employment_date
+        print(f"Your employment days this year is {emp_days} days")
+
+
 def main():
     """
     Run all program functions
@@ -126,6 +155,7 @@ def main():
     get_employment_date()
     get_holiday_entitlement()
     get_absence_data()
+    calculate_employment_days(employment_date)
 
 
 print("Welcome to the Vacation Calculator!\n")

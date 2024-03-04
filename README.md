@@ -6,12 +6,13 @@
 
 - Welcomes the user
 - Explains the conditions
+- Let the user enter the vacation year
 
 ## Libraries
 
 ### Python Standard Libraries
 
-- I used the datetime module to to parse vacation year into a datetime object and to be able to validate the input year format.
+- I used the datetime module to to parse vacation year and employment date into datetime objects and to be able to validate the input format.
 
 https://stackoverflow.com/questions/74091035/how-do-i-validate-a-date-format-with-python
 

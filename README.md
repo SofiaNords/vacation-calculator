@@ -24,6 +24,10 @@
 
 - When the user enters their absence data the input is converted to an integer. The validate function controls the format of the input and print out if it's not valid.
 
+#### Calculate employment days
+
+- The function calculates how many employment days the user got during the vacation year by comparing the employment date with the last day of the vacation year.
+
 ## Libraries
 
 ### Python Standard Libraries

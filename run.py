@@ -131,11 +131,13 @@ def calculate_employment_days(employment_date):
     vac_year = str(vacation_year)
 
     global last_day_vac_year
-    last_day_vac_year = datetime.datetime.strptime(f"{vac_year}-04-01", "%Y-%m-%d")
+    last_day_vac_year = datetime.datetime.strptime(
+        f"{vac_year}-04-01", "%Y-%m-%d")
 
     global last_day_last_vac_year
-    last_day_last_vac_year = datetime.datetime.strptime(f"{last_vac_year}-04-01", "%Y-%m-%d")
-    
+    last_day_last_vac_year = datetime.datetime.strptime(
+        f"{last_vac_year}-04-01", "%Y-%m-%d")
+
     if employment_date <= datetime.datetime(int(last_vac_year), 4, 1):
         global emp_days
         emp_days = last_day_vac_year - last_day_last_vac_year

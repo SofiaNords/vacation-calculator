@@ -9,10 +9,9 @@ def get_vacation_year():
     while True:
         global vacation_year
         vacation_year = input(
-            "Enter the vacation year you want to calculate (YYYY):")
+            "Enter the vacation year you want to calculate (YYYY):\n")
 
         if validate_vacation_year(vacation_year):
-            print(f"Thank you, your vacation year is {vacation_year}.")
             break
 
     global last_vac_year
@@ -38,10 +37,9 @@ def get_employment_date():
     """
     while True:
         global employment_date
-        employment_date = input("Enter your employment date (YYYY-MM_DD):")
+        employment_date = input("Enter your employment date (YYYY-MM_DD):\n")
 
         if validate_employment_date(employment_date):
-            print(f"Thank you, your employment date is {employment_date}.")
             break
 
 
@@ -66,10 +64,9 @@ def get_holiday_entitlement():
     while True:
         global holiday_entitlement
         holiday_entitlement = input(
-            "Enter the number of your holiday_entitlement (e.g. 25):")
+            "Enter the number of your holiday_entitlement (e.g. 25):\n")
 
         if validate_holiday_entitlement(holiday_entitlement):
-            print(f"Your holiday entitlement is: {holiday_entitlement}")
             break
 
 
@@ -98,14 +95,10 @@ def get_absence_data():
         global absence_data
         absence_data = input(
             f"Enter the number of calender days with full leave of \
-absence since {last_vac_year}-04-01:"
+absence since {last_vac_year}-04-01:\n"
             )
 
         if validate_absence_data(absence_data):
-            print(
-                f"Your number of calender days with full leave of \
-absence is: {absence_data}"
-                )
             break
 
 
@@ -142,12 +135,8 @@ def calculate_employment_days(employment_date):
     if employment_date <= datetime.datetime(int(last_vac_year), 4, 1):
         global emp_days
         emp_days = last_day_vac_year - last_day_last_vac_year
-        print(f"Your employment days this year is {emp_days} days")
     else:
-        print(f"Vacation year is {vacation_year}")
-        print(f"Last day vacation year is {last_day_vac_year}")
         emp_days = last_day_vac_year - employment_date
-        print(f"Your employment days this year is {emp_days} days")
 
 
 def calculate_paid_vacation_days(emp_days):
@@ -159,20 +148,11 @@ def calculate_paid_vacation_days(emp_days):
     the current vacation year and multiplied by the vacation
     entitlement before being rounded up.
     """
-    print(f"This is employ_days before converting to int {emp_days}")
-    print(type(emp_days))
     employ_days = int(emp_days.days)
-    print(f"This is employ_days after converting to int {employ_days}")
-    print(type(employ_days))
-    print(type(absence_data))
 
     days_of_vac_year = last_day_vac_year - last_day_last_vac_year
-    print(f"The number of days this vacation year is: {days_of_vac_year}")
-    print(type(days_of_vac_year))
+
     days_of_vac_year_int = int(days_of_vac_year.days)
-    print(f"This is days of vac year after converting to int \
-    {days_of_vac_year_int}")
-    print(type(days_of_vac_year_int))
 
     paid_vacation_days = (
         employ_days - int(absence_data))/days_of_vac_year_int *\

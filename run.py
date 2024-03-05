@@ -1,5 +1,6 @@
 import datetime
 import math
+import pyfiglet
 
 
 def get_vacation_year():
@@ -174,7 +175,8 @@ def main():
     calculate_paid_vacation_days(emp_days)
 
 
-print("Welcome to the Vacation Calculator!\n")
+result = pyfiglet.figlet_format("Vacation Calculator")
+print(result)
 print("This is a calculator that computes how many paid vacation days \
 you can expect to have this summer.\n")
 print("It is based on your coverage under Swedish vacation law and \

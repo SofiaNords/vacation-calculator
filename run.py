@@ -127,7 +127,8 @@ def get_absence_data():
         global absence_data
         absence_data = input(
             f"\nEnter the number of calender days with full leave of \
-absence between {last_vac_year}-04-01 and {vacation_year}-03-31: ")
+absence that doesn't include days qualified for vacation pay between \
+{last_vac_year}-04-01 and {vacation_year}-03-31: ")
 
         if validate_absence_data(absence_data):
             break

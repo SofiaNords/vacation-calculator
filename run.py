@@ -10,7 +10,7 @@ def get_vacation_year():
     while True:
         global vacation_year
         vacation_year = input(
-            "Enter the vacation year you want to calculate (YYYY):\n")
+            "Enter the vacation year you want to calculate (YYYY): ")
 
         if validate_vacation_year(vacation_year):
             break
@@ -38,7 +38,7 @@ def get_employment_date():
     """
     while True:
         global employment_date
-        employment_date = input("Enter your employment date (YYYY-MM-DD):\n")
+        employment_date = input("\nEnter your employment date (YYYY-MM-DD): ")
 
         if validate_employment_date(employment_date):
             break
@@ -65,7 +65,7 @@ def get_holiday_entitlement():
     while True:
         global holiday_entitlement
         holiday_entitlement = input(
-            "Enter the number of your holiday_entitlement (e.g. 25):\n")
+            "\nEnter the number of your holiday_entitlement (e.g. 25): ")
 
         if validate_holiday_entitlement(holiday_entitlement):
             break
@@ -92,7 +92,7 @@ def explain_absence_data():
     """
     Explains what kind of data the user should enter in the next step.
     """
-    answer = input("Before moving on, we recommend you to read about \
+    answer = input("\nBefore moving on, we recommend you to read about \
 absence data. Do you want to read more about absence data? (y/n): ")
     if answer.lower() == "y":
         print("\nCertain types of absence qualify for vacation pay. \
@@ -114,9 +114,9 @@ disease, you can be absent for up to 180 days during the qualifying year.\
 the qualifying year without affecting your vacation pay.\n\n - Certain Types \
 of Education: Trade union training, sign language training for parents, and \
 Swedish language teaching for immigrants do not impact your vacation pay \
-during the first 180 days.\n\n")
+during the first 180 days.\n")
     else:
-        print("Ok, then you can move on without further explanation.")
+        print("\nOk, then you can move on without further explanation.")
 
 
 def get_absence_data():
@@ -126,8 +126,8 @@ def get_absence_data():
     while True:
         global absence_data
         absence_data = input(
-            f"Enter the number of calender days with full leave of \
-absence between {last_vac_year}-04-01 and {vacation_year}-03-31:\n")
+            f"\nEnter the number of calender days with full leave of \
+absence between {last_vac_year}-04-01 and {vacation_year}-03-31: ")
 
         if validate_absence_data(absence_data):
             break
@@ -189,7 +189,7 @@ def calculate_paid_vacation_days(emp_days):
         employ_days - int(absence_data))/days_of_vac_year_int *\
         int(holiday_entitlement)
     rounded_up_paid_vac_days = math.ceil(paid_vacation_days)
-    print(f"You will get {rounded_up_paid_vac_days} paid vacation days \
+    print(f"\nYou will get {rounded_up_paid_vac_days} paid vacation days \
 {vacation_year}")
 
 

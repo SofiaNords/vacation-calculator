@@ -177,9 +177,9 @@ def main():
 
 result = pyfiglet.figlet_format("Vacation Calculator")
 print(result)
-print("This is a calculator that computes how many paid vacation days \
-you can expect to have this summer.\n")
-print("It is based on your coverage under Swedish vacation law and \
-considers the previous year as the accrual year.\n")
+print("This calculator works out how many paid vacation days you \
+can expect in a vacation year.\n")
+print("The calculator is adapted to the Swedish vacation law \
+and assumes that the previous year is the qualifying year.\n")
 
 main()

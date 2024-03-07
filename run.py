@@ -1,6 +1,7 @@
 import datetime
 import math
 import pyfiglet
+from colorama import Fore
 
 
 def get_vacation_year():
@@ -80,7 +81,7 @@ def validate_holiday_entitlement(holiday_entitlement):
         holiday_entitlement = int(holiday_entitlement)
         if holiday_entitlement < 25:
             print("\nHoliday entitlement must be at least 25 days. Please \
-            try again!")
+try again!")
             return False
     except ValueError:
         print("\nIncorrect holiday entitlement format, please try again!")

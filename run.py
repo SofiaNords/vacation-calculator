@@ -100,7 +100,7 @@ def explain_absence_data():
     answer = input("\nBefore moving on, we recommend you to read about \
 absence data. Do you want to read more about absence data? (y/n): ")
     if answer.lower() == "y":
-        print(Fore.GREEN + "\nCertain types of absence qualify for \
+        print(Fore.BLUE + "\nCertain types of absence qualify for \
 vacation pay. These days should not be included in the total days \
 of absence you will enter in the next step. Here are the details:\
 \n\n - Sick Leave: You can take up to 180 days of sick leave during \
@@ -136,7 +136,7 @@ def get_absence_data():
         absence_data = input(Fore.WHITE + f"\nEnter the number of \
 calender days with full leave of absence that doesn't include \
 days qualified for vacation pay between {last_vac_year}-04-01 \
-        and {vacation_year}-03-31: ")
+and {vacation_year}-03-31: ")
 
         if validate_absence_data(absence_data):
             break

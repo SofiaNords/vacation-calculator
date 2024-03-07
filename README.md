@@ -6,6 +6,28 @@ The Vacation Calculator is a helpful tool designed to assist users in calculatin
 
 <h2 align="center"><img src="assets/images/vacation-calculator.png">
 
+## User Experience (UX)
+
+### User Stories
+
+#### First Visitor Goals
+
+1. As a First Time Visitor, I want to easily understand the main purpose of the application.
+
+2. As a First Time Visitor, I want to know right away how to start and a clear and concise step-by-step guidance in how to use the application.
+
+3. As a First Time Visitor, I want feedback if my input is not correct in some way.
+
+4. As a First Time Visitor, I want to be able to get more detailed information about rules in the Swedish Vacation Act.
+
+#### Returning Visitor Goals
+
+1. As a Returning Visitor, I want to be able to start the calculations right away and follow a clear and concise step-by-step guidance in how to use the application.
+
+2. As a Returning Visitor, I want feedback if my input is not correct in some way.
+
+3. As a Returning Visitor, I want to be able to choose if I want more detailed information about the rules in the Swedish Vacation Act or not. 
+
 ## Features
 
 ### Existing features

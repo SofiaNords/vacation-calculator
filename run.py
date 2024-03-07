@@ -11,7 +11,7 @@ def get_vacation_year():
     while True:
         global vacation_year
         vacation_year = input(
-            "\nEnter the vacation year you want to calculate (YYYY): ")
+            Fore.BLACK + "\nEnter the vacation year you want to calculate (YYYY): ")
 
         if validate_vacation_year(vacation_year):
             break
@@ -27,7 +27,7 @@ def validate_vacation_year(vacation_year):
     try:
         vacation_year = datetime.datetime.strptime(vacation_year, "%Y")
     except ValueError:
-        print("\nIncorrect vacation year format, please try again!")
+        print(Fore.RED + "\nIncorrect vacation year format, please try again!")
         return False
 
     return True
@@ -39,7 +39,7 @@ def get_employment_date():
     """
     while True:
         global employment_date
-        employment_date = input("\nEnter your employment date (YYYY-MM-DD): ")
+        employment_date = input(Fore.BLACK + "\nEnter your employment date (YYYY-MM-DD): ")
 
         if validate_employment_date(employment_date):
             break
@@ -53,7 +53,7 @@ def validate_employment_date(employment_date):
         employment_date = datetime.datetime.strptime(
             employment_date, "%Y-%m-%d")
     except ValueError:
-        print("\nIncorrect employment date format, please try again!")
+        print(Fore.RED + "\nIncorrect employment date format, please try again!")
         return False
 
     return True
@@ -65,7 +65,7 @@ def get_holiday_entitlement():
     """
     while True:
         global holiday_entitlement
-        holiday_entitlement = input(
+        holiday_entitlement = input(Fore.BLACK + 
             "\nEnter the number of your holiday_entitlement (e.g. 25): ")
 
         if validate_holiday_entitlement(holiday_entitlement):
@@ -84,7 +84,7 @@ def validate_holiday_entitlement(holiday_entitlement):
 try again!")
             return False
     except ValueError:
-        print("\nIncorrect holiday entitlement format, please try again!")
+        print(Fore.RED + "\nIncorrect holiday entitlement format, please try again!")
         return False
 
     return True
@@ -97,7 +97,7 @@ def explain_absence_data():
     answer = input("\nBefore moving on, we recommend you to read about \
 absence data. Do you want to read more about absence data? (y/n): ")
     if answer.lower() == "y":
-        print("\nCertain types of absence qualify for vacation pay. \
+        print(Fore.GREEN + "\nCertain types of absence qualify for vacation pay. \
 These days should not be included in the total days of absence you will enter \
 in the next step. Here are the details:\n\n - Sick Leave: You can take up \
 to 180 days of sick leave during the accrual year without affecting your \
@@ -118,7 +118,7 @@ of Education: Trade union training, sign language training for parents, and \
 Swedish language teaching for immigrants do not impact your vacation pay \
 during the first 180 days.\n")
     else:
-        print("\nOk, then you can move on without further explanation.")
+        print(Fore.BLACK + "\nOk, then you can move on without further explanation.")
 
 
 def get_absence_data():
@@ -127,7 +127,7 @@ def get_absence_data():
     """
     while True:
         global absence_data
-        absence_data = input(
+        absence_data = input(Fore.BLACK + 
             f"\nEnter the number of calender days with full leave of \
 absence that doesn't include days qualified for vacation pay between \
 {last_vac_year}-04-01 and {vacation_year}-03-31: ")

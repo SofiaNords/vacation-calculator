@@ -1,3 +1,11 @@
+<h1 align="center">Vacation Calculator</h1>
+
+[View the live project here.](https://vacation-calculator-0f929794e117.herokuapp.com/)
+
+The Vacation Calculator is a helpful tool designed to assist users in calculating their entitlement to paid vacation days in accordance with the Swedish Vacation Act. By inputting specific parameters, users can determine the number of paid vacation days they will receive during a given vacation year.
+
+<h2 align="center"><img src="assets/images/vacation-calculator.png">
+
 ## Features
 
 ### Existing features

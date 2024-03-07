@@ -82,6 +82,8 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 - When the user enters their absence data the input is converted to an integer. The validate function controls the format of the input and print out if it's not valid.
 
+<h2 align="center"><img src="assets/images/enter-validate-absence-data.png"></h2>
+
 #### Calculate employment days
 
 - The function calculates how many employment days the user got during the vacation year by comparing the employment date with the last day of the vacation year.

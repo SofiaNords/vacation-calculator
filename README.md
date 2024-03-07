@@ -28,6 +28,16 @@ The Vacation Calculator is a helpful tool designed to assist users in calculatin
 
 3. As a Returning Visitor, I want to be able to choose if I want more detailed information about the rules in the Swedish Vacation Act or not. 
 
+## Flow Chart
+
+I used Canva to produce my flow chart. 
+
+https://www.canva.com/
+
+The flow chart largely corresponds to the final product except for the "Explain absence data" feature that I added during development. 
+
+[View the Flow Chart of the project here.](https://www.canva.com/design/DAF-QQF54tg/LDPiva1vMDlR_EAO3aPBlw/view?utm_content=DAF-QQF54tg&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
 ## Features
 
 ### Existing features
@@ -38,6 +48,8 @@ The Vacation Calculator is a helpful tool designed to assist users in calculatin
 - Explains the conditions
 - Let the user enter the vacation year
 
+<h2 align="center"><img src="assets/images/start_calculator.png">
+
 #### Select and validate vacation year
 
 - When the user enters the vacation year, the input is validated to ensure that it is in the correct date format.
@@ -46,9 +58,13 @@ The Vacation Calculator is a helpful tool designed to assist users in calculatin
 
 - When the user enters the employment date, the input is validated to ensure that it is in the correct date format.
 
+<h2 align="center"><img src="assets/images/enter-validate-employment-date.png">
+
 #### Enter and validate holiday entitlement
 
 - When the user enters their holiday entitlement the input is converted to an integer, the validate function controls that it is at least 25 days (which is the minimum by law) and that the format is correct.
+
+<h2 align="center"><img src="assets/images/enter-validate-holiday-entitlement.png">
 
 #### Enter and validate absence data
 

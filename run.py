@@ -10,7 +10,7 @@ def get_vacation_year():
     while True:
         global vacation_year
         vacation_year = input(
-            "Enter the vacation year you want to calculate (YYYY): ")
+            "\nEnter the vacation year you want to calculate (YYYY): ")
 
         if validate_vacation_year(vacation_year):
             break
@@ -26,7 +26,7 @@ def validate_vacation_year(vacation_year):
     try:
         vacation_year = datetime.datetime.strptime(vacation_year, "%Y")
     except ValueError:
-        print("Incrorrect employment date format, please try again.")
+        print("\nIncorrect vacation year format, please try again.")
         return False
 
     return True
@@ -52,7 +52,7 @@ def validate_employment_date(employment_date):
         employment_date = datetime.datetime.strptime(
             employment_date, "%Y-%m-%d")
     except ValueError:
-        print("Incorrect employment date format, please try again!")
+        print("\nIncorrect employment date format, please try again!")
         return False
 
     return True
@@ -79,10 +79,10 @@ def validate_holiday_entitlement(holiday_entitlement):
     try:
         holiday_entitlement = int(holiday_entitlement)
         if holiday_entitlement < 25:
-            print("Holiday entitlement must be at least 25 days.")
+            print("\nHoliday entitlement must be at least 25 days.")
             return False
     except ValueError:
-        print("Incorrect holiday entitlement format, please try again.")
+        print("\nIncorrect holiday entitlement format, please try again.")
         return False
 
     return True
@@ -212,6 +212,6 @@ print(result)
 print("This calculator works out how many paid vacation days you \
 can expect in a vacation year.\n")
 print("The calculator is adapted to the Swedish vacation law \
-and assumes that the previous year is the qualifying year.\n")
+and assumes that the previous year is the qualifying year.")
 
 main()

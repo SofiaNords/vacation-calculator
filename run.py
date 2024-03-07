@@ -141,7 +141,7 @@ def validate_absence_data(absence_data):
     try:
         absence_data = int(absence_data)
     except ValueError:
-        print("Incorrect absence data format, please try again.")
+        print("\nIncorrect absence data format, please try again.")
         return False
 
     return True

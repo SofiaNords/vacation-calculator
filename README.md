@@ -66,6 +66,18 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 <h2 align="center"><img src="assets/images/enter-validate-holiday-entitlement.png">
 
+#### Explain absence data
+
+- Before the user can enter their absence data, they get a choice and a recommendation to read more about absence data. The user is responsible for entering correct absence data and should be aware of the rules that apply.
+
+<h3 align="center"><img src="assets/images/choose-explain-absence-data.png"></h3>
+
+- If the user choose to read more about absence data the following text is presented:
+
+<h3 align="center"><img src="assets/images/explain-absence-data-1.png"></h3>
+<h2 align="center"><img src="assets/images/explain-absence-data-2.png"></h2>
+
+
 #### Enter and validate absence data
 
 - When the user enters their absence data the input is converted to an integer. The validate function controls the format of the input and print out if it's not valid.

@@ -26,7 +26,7 @@ def validate_vacation_year(vacation_year):
     try:
         vacation_year = datetime.datetime.strptime(vacation_year, "%Y")
     except ValueError:
-        print("\nIncorrect vacation year format, please try again.")
+        print("\nIncorrect vacation year format, please try again!")
         return False
 
     return True
@@ -79,10 +79,11 @@ def validate_holiday_entitlement(holiday_entitlement):
     try:
         holiday_entitlement = int(holiday_entitlement)
         if holiday_entitlement < 25:
-            print("\nHoliday entitlement must be at least 25 days.")
+            print("\nHoliday entitlement must be at least 25 days. Please \
+            try again!")
             return False
     except ValueError:
-        print("\nIncorrect holiday entitlement format, please try again.")
+        print("\nIncorrect holiday entitlement format, please try again!")
         return False
 
     return True
@@ -141,7 +142,7 @@ def validate_absence_data(absence_data):
     try:
         absence_data = int(absence_data)
     except ValueError:
-        print("\nIncorrect absence data format, please try again.")
+        print("\nIncorrect absence data format, please try again!")
         return False
 
     return True

@@ -189,9 +189,17 @@ def calculate_paid_vacation_days(emp_days):
     paid_vacation_days = (
         employ_days - int(absence_data))/days_of_vac_year_int *\
         int(holiday_entitlement)
+
     rounded_up_paid_vac_days = math.ceil(paid_vacation_days)
     print(f"\nYou will get {rounded_up_paid_vac_days} paid vacation days \
-{vacation_year}")
+{vacation_year}!")
+
+    if rounded_up_paid_vac_days < int(holiday_entitlement):
+        unpaid_vacation_days = int(
+            holiday_entitlement) - rounded_up_paid_vac_days
+        print(f"\nYou will also receive {unpaid_vacation_days} unpaid \
+vacation days as you are entitled to {holiday_entitlement} vacation days \
+each year.")
 
 
 def main():

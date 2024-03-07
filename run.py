@@ -10,8 +10,8 @@ def get_vacation_year():
     """
     while True:
         global vacation_year
-        vacation_year = input(
-            Fore.BLACK + "\nEnter the vacation year you want to calculate (YYYY): ")
+        vacation_year = input(Fore.WHITE + "\nEnter the vacation year \
+you want to calculate (YYYY): ")
 
         if validate_vacation_year(vacation_year):
             break
@@ -39,7 +39,8 @@ def get_employment_date():
     """
     while True:
         global employment_date
-        employment_date = input(Fore.BLACK + "\nEnter your employment date (YYYY-MM-DD): ")
+        employment_date = input(Fore.WHITE + "\nEnter your employment date \
+(YYYY-MM-DD): ")
 
         if validate_employment_date(employment_date):
             break
@@ -53,7 +54,8 @@ def validate_employment_date(employment_date):
         employment_date = datetime.datetime.strptime(
             employment_date, "%Y-%m-%d")
     except ValueError:
-        print(Fore.RED + "\nIncorrect employment date format, please try again!")
+        print(Fore.RED + "\nIncorrect employment date format, \
+please try again!")
         return False
 
     return True
@@ -65,8 +67,8 @@ def get_holiday_entitlement():
     """
     while True:
         global holiday_entitlement
-        holiday_entitlement = input(Fore.BLACK + 
-            "\nEnter the number of your holiday_entitlement (e.g. 25): ")
+        holiday_entitlement = input(Fore.WHITE + "\nEnter the number \
+of your holiday_entitlement (e.g. 25): ")
 
         if validate_holiday_entitlement(holiday_entitlement):
             break
@@ -84,7 +86,8 @@ def validate_holiday_entitlement(holiday_entitlement):
 try again!")
             return False
     except ValueError:
-        print(Fore.RED + "\nIncorrect holiday entitlement format, please try again!")
+        print(Fore.RED + "\nIncorrect holiday entitlement format, \
+please try again!")
         return False
 
     return True
@@ -97,28 +100,31 @@ def explain_absence_data():
     answer = input("\nBefore moving on, we recommend you to read about \
 absence data. Do you want to read more about absence data? (y/n): ")
     if answer.lower() == "y":
-        print(Fore.GREEN + "\nCertain types of absence qualify for vacation pay. \
-These days should not be included in the total days of absence you will enter \
-in the next step. Here are the details:\n\n - Sick Leave: You can take up \
-to 180 days of sick leave during the accrual year without affecting your \
-paid vacation. This applies throughout the year of onset and the subsequent \
-qualifying year.\
+        print(Fore.GREEN + "\nCertain types of absence qualify for \
+vacation pay. These days should not be included in the total days \
+of absence you will enter in the next step. Here are the details:\
+\n\n - Sick Leave: You can take up to 180 days of sick leave during \
+the accrual year without affecting your paid vacation. This applies \
+throughout the year of onset and the subsequent qualifying year.\
 \n\n - Workplace Injury: If you experience a workplace injury, you’re \
 eligible for absence during the year of onset and the following \
-qualifying year.\n\n - Parental Leave: You can stay at home for a total \
-of 120 days per child (or per pregnancy, regardless of whether it’s twins). \
-\n\n - Care of a Sick Child: You’re entitled to 120 days of absence each \
-qualifying year for caring for a sick child.\n\n - Pregnancy allowance: \
-During the authorized period, taking time off due to pregnancy doesn’t \
-impact your paid vacation.\n\n - Disease:  If you’re carrying an infectious \
-disease, you can be absent for up to 180 days during the qualifying year.\
-\n\n - Dependent Care Support: You can take up to 45 days of absence during \
-the qualifying year without affecting your vacation pay.\n\n - Certain Types \
-of Education: Trade union training, sign language training for parents, and \
-Swedish language teaching for immigrants do not impact your vacation pay \
-during the first 180 days.\n")
+qualifying year.\n\n - Parental Leave: You can stay at home for a \
+total of 120 days per child (or per pregnancy, regardless of whether \
+it’s twins). \n\n - Care of a Sick Child: You’re entitled to 120 days \
+of absence each qualifying year for caring for a sick child.\
+\n\n - Pregnancy allowance: During the authorized period, taking \
+time off due to pregnancy doesn’t impact your paid vacation.\
+\n\n - Disease:  If you’re carrying an infectious disease, you can be \
+absent for up to 180 days during the qualifying year.\
+\n\n - Dependent Care Support: You can take up to 45 days of absence \
+during the qualifying year without affecting your vacation pay.\
+\n\n - Certain Types of Education: Trade union training, \
+sign language training for parents, and Swedish language teaching \
+for immigrants do not impact your vacation pay during the first \
+180 days.\n")
     else:
-        print(Fore.BLACK + "\nOk, then you can move on without further explanation.")
+        print(Fore.WHITE + "\nOk, then you can move on without further \
+        explanation.")
 
 
 def get_absence_data():
@@ -127,10 +133,10 @@ def get_absence_data():
     """
     while True:
         global absence_data
-        absence_data = input(Fore.BLACK + 
-            f"\nEnter the number of calender days with full leave of \
-absence that doesn't include days qualified for vacation pay between \
-{last_vac_year}-04-01 and {vacation_year}-03-31: ")
+        absence_data = input(Fore.WHITE + f"\nEnter the number of \
+calender days with full leave of absence that doesn't include \
+days qualified for vacation pay between {last_vac_year}-04-01 \
+        and {vacation_year}-03-31: ")
 
         if validate_absence_data(absence_data):
             break

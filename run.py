@@ -200,8 +200,8 @@ def calculate_paid_vacation_days(emp_days):
         int(holiday_entitlement)
 
     rounded_up_paid_vac_days = math.ceil(paid_vacation_days)
-    print(f"\nYou will get {rounded_up_paid_vac_days} paid vacation days \
-{vacation_year}!")
+    print(Back.MAGENTA + f"\nYou will get {rounded_up_paid_vac_days} \
+paid vacation days {vacation_year}!")
 
     if rounded_up_paid_vac_days < int(holiday_entitlement):
         unpaid_vacation_days = int(

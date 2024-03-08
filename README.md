@@ -134,7 +134,7 @@ https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 
 <img src="assets/images/ci-python-linter.png">
 
-### User Stories
+### User Stories Testing
 
 #### First Visitor Goals
 
@@ -152,13 +152,21 @@ https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 
 4. As a First Time Visitor, I want to be able to get more detailed information about rules in the Swedish Vacation Act.
 
+        The user get's a choice and a recommendation to read more about absence data. If the user enters y (yes) a detailed description of certain types of absence that qualifies for vacation pay appears.
+
 #### Returning Visitor Goals
 
 1. As a Returning Visitor, I want to be able to start the calculations right away and follow a clear and concise step-by-step guidance in how to use the application.
 
+        The user is asked to enter the vacation year they want to calculate in the first step right after the information text. In the following steps the user is asked to enter employment date, holiday entitlement etc.
+
 2. As a Returning Visitor, I want feedback if my input is not correct in some way.
 
+        If the user enters a vacation year, an employment date or a holiday entitlement in the wrong format an error messege appears that encourage the user to try again.
+
 3. As a Returning Visitor, I want to be able to choose if I want more detailed information about the rules in the Swedish Vacation Act or not. 
+
+        The user get's a choice and a recommendation to read more about absence data. If the user already knows about the absence data rules they can enter n (no) and proceed and enter their absence data.
 
 ## Credits
 

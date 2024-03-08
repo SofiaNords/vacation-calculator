@@ -82,8 +82,8 @@ def validate_holiday_entitlement(holiday_entitlement):
     try:
         holiday_entitlement = int(holiday_entitlement)
         if holiday_entitlement < 25:
-            print("\nHoliday entitlement must be at least 25 days. Please \
-try again!")
+            print(Fore.RED + "\nHoliday entitlement must be at least \
+25 days. Please try again!")
             return False
     except ValueError:
         print(Fore.RED + "\nIncorrect holiday entitlement format, \
@@ -114,8 +114,8 @@ it’s twins). \n\n - Care of a Sick Child: You’re entitled to 120 days \
 of absence each qualifying year for caring for a sick child.\
 \n\n - Pregnancy allowance: During the authorized period, taking \
 time off due to pregnancy doesn’t impact your paid vacation.\
-\n\n - Disease:  If you’re carrying an infectious disease, you can be \
-absent for up to 180 days during the qualifying year.\
+\n\n - Disease Vector:  If you’re carrying an infectious disease, you \
+can be absent for up to 180 days during the qualifying year.\
 \n\n - Dependent Care Support: You can take up to 45 days of absence \
 during the qualifying year without affecting your vacation pay.\
 \n\n - Certain Types of Education: Trade union training, \
@@ -124,7 +124,7 @@ for immigrants do not impact your vacation pay during the first \
 180 days.\n")
     else:
         print(Fore.WHITE + "\nOk, then you can move on without further \
-        explanation.")
+explanation.")
 
 
 def get_absence_data():

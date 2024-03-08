@@ -96,25 +96,35 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 ### Python Standard Libraries
 
-- I used the datetime module to to parse vacation year and employment date into datetime objects and to be able to validate the input format.
+<h4>Datetime Module</h4>
+- I used the Datetime Module to parse vacation year and employment date into datetime objects and to be able to validate the input format.
 
 https://stackoverflow.com/questions/74091035/how-do-i-validate-a-date-format-with-python
 
-- I used the math module to be able to round up the result of the paid vacation days
+<h4>Math Module</h4>
+- I used the Math Module to be able to round up the result of the paid vacation days.
 
 https://www.w3schools.com/python/ref_math_ceil.asp
 
 
 ### Other Libraries
 
-- I used the pyfiglet module to style the program’s header and enhance the visual presentation of the application.
+<h4>Pyfiglet Module</h4> 
+- I used the Pyfiglet Module to style the program’s header and enhance the visual presentation of the application.
 
 https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
+
+<h4>Colorama Module</h4>
+- I used the Colorama Module to be able to use different colours to the text.
+
+https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 
 
 ## Credits
 
 - I was inspired by my classmate Raneem Yad to use the pyfiglet module. She also shared where I could find instructions on how to install and use pyfiglet.
+
+- My Mentor, Spencer Barriball, for continuous helpful feedback.
 
 
 

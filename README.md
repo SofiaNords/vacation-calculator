@@ -126,6 +126,40 @@ https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
 https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 
 
+## Testing
+
+### Validator Testing
+
+[The CI Python Linter](https://pep8ci.herokuapp.com/) displays "All clear, no errors found".
+
+<img src="assets/images/ci-python-linter.png">
+
+### User Stories
+
+#### First Visitor Goals
+
+1. As a First Time Visitor, I want to easily understand the main purpose of the application.
+
+        When users launch the application, they are greeted with a brief and clear information message. The text explains that the app functions as a vacation days calculator, specifically tailored to Swedish vacation law. It assumes that the preceding year serves as the qualifying year for calculating paid vacation days.
+
+2. As a First Time Visitor, I want to know right away how to start and a clear and concise step-by-step guidance in how to use the application.
+
+        The user is asked to enter the vacation year they want to calculate in the first step right after the information text. In the following steps the user is asked to enter employment date, holiday entitlement etc.
+
+3. As a First Time Visitor, I want feedback if my input is not correct in some way.
+
+        If the user enters a vacation year, an employment date or a holiday entitlement in the wrong format an error messege appears that encourage the user to try again.
+
+4. As a First Time Visitor, I want to be able to get more detailed information about rules in the Swedish Vacation Act.
+
+#### Returning Visitor Goals
+
+1. As a Returning Visitor, I want to be able to start the calculations right away and follow a clear and concise step-by-step guidance in how to use the application.
+
+2. As a Returning Visitor, I want feedback if my input is not correct in some way.
+
+3. As a Returning Visitor, I want to be able to choose if I want more detailed information about the rules in the Swedish Vacation Act or not. 
+
 ## Credits
 
 - I was inspired by my classmate Raneem Yad to use the pyfiglet module. She also shared where I could find instructions on how to install and use pyfiglet.

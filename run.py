@@ -10,7 +10,7 @@ def get_vacation_year():
     """
     while True:
         global vacation_year
-        vacation_year = input(Fore.WHITE + "\nEnter the vacation year \
+        vacation_year = input(Fore.RESET + "\nEnter the vacation year \
 you want to calculate (YYYY): ")
 
         if validate_vacation_year(vacation_year):
@@ -39,7 +39,7 @@ def get_employment_date():
     """
     while True:
         global employment_date
-        employment_date = input(Fore.WHITE + "\nEnter your employment date \
+        employment_date = input(Fore.RESET + "\nEnter your employment date \
 (YYYY-MM-DD): ")
 
         if validate_employment_date(employment_date):
@@ -67,7 +67,7 @@ def get_holiday_entitlement():
     """
     while True:
         global holiday_entitlement
-        holiday_entitlement = input(Fore.WHITE + "\nEnter the number \
+        holiday_entitlement = input(Fore.RESET + "\nEnter the number \
 of your holiday_entitlement (e.g. 25): ")
 
         if validate_holiday_entitlement(holiday_entitlement):
@@ -123,7 +123,7 @@ sign language training for parents, and Swedish language teaching \
 for immigrants do not impact your vacation pay during the first \
 180 days.\n")
     else:
-        print(Fore.WHITE + "\nOk, then you can move on without further \
+        print(Fore.RESET + "\nOk, then you can move on without further \
 explanation.")
 
 
@@ -133,7 +133,7 @@ def get_absence_data():
     """
     while True:
         global absence_data
-        absence_data = input(Fore.WHITE + f"\nEnter the number of \
+        absence_data = input(Fore.RESET + f"\nEnter the number of \
 calender days with full leave of absence that doesn't include \
 days qualified for vacation pay between {last_vac_year}-04-01 \
 and {vacation_year}-03-31: ")

@@ -2,6 +2,7 @@ import datetime
 import math
 import pyfiglet
 from colorama import Fore
+from colorama import Back
 
 
 def get_vacation_year():
@@ -100,7 +101,7 @@ def explain_absence_data():
     answer = input("\nBefore moving on, we recommend you to read about \
 absence data. Do you want to read more about absence data? (y/n): ")
     if answer.lower() == "y":
-        print(Fore.BLUE + "\nCertain types of absence qualify for \
+        print(Back.GREEN + "\nCertain types of absence qualify for \
 vacation pay. These days should not be included in the total days \
 of absence you will enter in the next step. Here are the details:\
 \n\n - Sick Leave: You can take up to 180 days of sick leave during \
@@ -133,7 +134,7 @@ def get_absence_data():
     """
     while True:
         global absence_data
-        absence_data = input(Fore.RESET + f"\nEnter the number of \
+        absence_data = input(Back.RESET + f"\nEnter the number of \
 calender days with full leave of absence that doesn't include \
 days qualified for vacation pay between {last_vac_year}-04-01 \
 and {vacation_year}-03-31: ")

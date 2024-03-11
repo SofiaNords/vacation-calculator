@@ -224,11 +224,11 @@ def main():
     calculate_paid_vacation_days(emp_days)
 
 
-result = pyfiglet.figlet_format("Vacation Calculator")
-print(result)
-print("This calculator works out how many paid vacation days you \
-can expect in a vacation year.\n")
-print("The calculator is adapted to the Swedish vacation law \
-and assumes that the previous year is the qualifying year.")
-
-main()
+if __name__ == "__main__":
+    result = pyfiglet.figlet_format("Vacation Calculator")
+    print(result)
+    print("This calculator works out how many paid vacation days you \
+    can expect in a vacation year.\n")
+    print("The calculator is adapted to the Swedish vacation law \
+    and assumes that the previous year is the qualifying year.")
+    main()

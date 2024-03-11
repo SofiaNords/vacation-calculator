@@ -8,7 +8,7 @@ The Vacation Calculator is a helpful tool designed to assist users in calculatin
 
 ## User Experience (UX)
 
-### Project Goals
+### Project Goal
 
 My goal with this application is to provide a user-friendly Vacation Calculator that ensures accurate and reliable calculations based on user input. 
 
@@ -28,6 +28,8 @@ The target audience consists of employees working for employers covered by the S
 
 4. As a First Time Visitor, I want to be able to get more detailed information about rules in the Swedish Vacation Act.
 
+5. As a First Time Visistor, I want the result, the number of paid vacation days presented to me.
+
 #### Returning Visitor Goals
 
 1. As a Returning Visitor, I want to be able to start the calculations right away and follow a clear and concise step-by-step guidance in how to use the application.
@@ -35,6 +37,8 @@ The target audience consists of employees working for employers covered by the S
 2. As a Returning Visitor, I want feedback if my input is not correct in some way.
 
 3. As a Returning Visitor, I want to be able to choose if I want more detailed information about the rules in the Swedish Vacation Act or not. 
+
+4. As a Returning Visitor, I want the result, the number of paid vacation days presented to me.
 
 ## Flow Chart
 
@@ -112,12 +116,12 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 #### Python Standard Libraries
 
-<h5>Datetime Module</h5>
+##### Datetime Module
 - I used the Datetime Module to parse vacation year and employment date into datetime objects and to be able to validate the input format.
 
 https://stackoverflow.com/questions/74091035/how-do-i-validate-a-date-format-with-python
 
-<h5>Math Module</h5>
+##### Math Module
 - I used the Math Module to be able to round up the result of the paid vacation days.
 
 https://www.w3schools.com/python/ref_math_ceil.asp
@@ -125,12 +129,12 @@ https://www.w3schools.com/python/ref_math_ceil.asp
 
 #### Other Libraries
 
-<h5>Pyfiglet Module</h5> 
+##### Pyfiglet Module
 - I used the Pyfiglet Module to style the program’s header and enhance the visual presentation of the application.
 
 https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
 
-<h5>Colorama Module</h5>
+##### Colorama Module
 - I used the Colorama Module to be able to use different colours to the text.
 
 https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
@@ -164,6 +168,10 @@ https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 
         The user get's a choice and a recommendation to read more about absence data. If the user enters y (yes) a detailed description of certain types of absence that qualifies for vacation pay appears.
 
+5. As a First Time Visistor, I want the result, the number of paid vacation days presented to me.
+
+        Once the user has provided all the requested input, the number of paid and unpaid vacation days is presented to the user.
+
 #### Returning Visitor Goals
 
 1. As a Returning Visitor, I want to be able to start the calculations right away and follow a clear and concise step-by-step guidance in how to use the application.
@@ -177,6 +185,10 @@ https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 3. As a Returning Visitor, I want to be able to choose if I want more detailed information about the rules in the Swedish Vacation Act or not. 
 
         The user get's a choice and a recommendation to read more about absence data. If the user already knows about the absence data rules they can enter n (no) and proceed and enter their absence data.
+
+4. As a Returning Visitor, I want the result, the number of paid vacation days presented to me.
+
+         Once the user has provided all the requested input, the number of paid and unpaid vacation days is presented to the user.
 
 ## Credits
 

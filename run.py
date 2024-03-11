@@ -253,7 +253,7 @@ def get_absence_data():
     """
     while True:
         global absence_data
-        absence_data = input(Back.RESET + f"\nEnter the number of \
+        absence_data = input(Fore.RESET + Back.RESET + f"\nEnter the number of \
 calender days with full leave of absence that doesn't include \
 days qualified for vacation pay between {last_vac_year}-04-01 \
 and {vacation_year}-03-31: ").strip()
@@ -284,7 +284,7 @@ def validate_absence_data(absence_data):
     try:
         absence_data = int(absence_data)
     except ValueError:
-        print("\nIncorrect absence data format, please try again!")
+        print(Fore.RED + "\nIncorrect absence data format, please try again!")
         return False
 
     return True

@@ -1,8 +1,7 @@
 import datetime
 import math
 import pyfiglet
-from colorama import Fore
-from colorama import Back
+from colorama import Fore, Back
 
 
 def get_vacation_year():

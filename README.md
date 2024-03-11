@@ -106,6 +106,11 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 - The function calculates how many paid vacation days the user will get. It reduces leave of absence from total employment days. In the next step, the remaining days are related to the days in the current vacation year and are multiplied by the vacation entitlement. At last the result is being rounded up just as it should be according to the law.
 
+### Future Features
+
+- Additional validations and error handling
+
+
 ## Technologies Used
 
 ### Languages Used
@@ -189,6 +194,19 @@ https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 4. As a Returning Visitor, I want the result, the number of paid vacation days presented to me.
 
          Once the user has provided all the requested input, the number of paid and unpaid vacation days is presented to the user.
+
+## Deployment
+
+The app was deployed through Heroku. The steps are as following:
+
+1. Log into Github and locate Github Repository.
+2. After creating a Heroku account, click "New" to create a new app from the dashboard.
+3. Create a unique name for the app and select your region: press "Create app".
+4. Go to settings and add the necessary Config_vars and buildpacks. Ensure that the buildpacks are set to Python and NodeJS (in that order).
+5. Click Deploy.
+6. Scroll Down to Deployment Method and select GitHub.
+7. Select the name of the repository from Github to be deployed and connect to Heroku.
+8. Scroll down to the deploy options: Click enable Automatic deploys (Will Update Automatically with every "git push"). This was chosen for this project.
 
 ## Credits
 

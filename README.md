@@ -99,7 +99,7 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 - When the user enters their absence data the input is converted to an integer. The validate function controls the format of the input and print out if it's not valid.
 
-<img align="center" src="assets/images/enter-validate-absence-data.png">
+<img align="center" src="assets/images/enter-validate-absence-data-red.png">
 
 #### Calculate employment days
 

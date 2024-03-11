@@ -11,7 +11,7 @@ def get_vacation_year():
     while True:
         global vacation_year
         vacation_year = input(Fore.RESET + "\nEnter the vacation year \
-you want to calculate (YYYY): ")
+you want to calculate (YYYY): ").strip()
 
         if validate_vacation_year(vacation_year):
             break
@@ -40,7 +40,7 @@ def get_employment_date():
     while True:
         global employment_date
         employment_date = input(Fore.RESET + "\nEnter your employment date \
-(YYYY-MM-DD): ")
+(YYYY-MM-DD): ").strip()
 
         if validate_employment_date(employment_date):
             break
@@ -68,7 +68,7 @@ def get_holiday_entitlement():
     while True:
         global holiday_entitlement
         holiday_entitlement = input(Fore.RESET + "\nEnter the number \
-of your holiday_entitlement (e.g. 25): ")
+of your holiday_entitlement (e.g. 25): ").strip()
 
         if validate_holiday_entitlement(holiday_entitlement):
             break
@@ -98,7 +98,7 @@ def explain_absence_data():
     Explains what kind of data the user should enter in the next step.
     """
     answer = input("\nBefore moving on, we recommend you to read about \
-absence data. Do you want to read more about absence data? (y/n): ")
+absence data. Do you want to read more about absence data? (y/n): ").strip()
     if answer.lower() == "y":
         print(Back.GREEN + "\nCertain types of absence qualify for \
 vacation pay. These days should not be included in the total days \
@@ -136,7 +136,7 @@ def get_absence_data():
         absence_data = input(Back.RESET + f"\nEnter the number of \
 calender days with full leave of absence that doesn't include \
 days qualified for vacation pay between {last_vac_year}-04-01 \
-and {vacation_year}-03-31: ")
+and {vacation_year}-03-31: ").strip()
 
         if validate_absence_data(absence_data):
             break
@@ -227,7 +227,7 @@ if __name__ == "__main__":
     result = pyfiglet.figlet_format("Vacation Calculator")
     print(result)
     print("This calculator works out how many paid vacation days you \
-    can expect in a vacation year.\n")
+can expect in a vacation year.\n")
     print("The calculator is adapted to the Swedish vacation law \
-    and assumes that the previous year is the qualifying year.")
+and assumes that the previous year is the qualifying year.")
     main()

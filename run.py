@@ -399,7 +399,6 @@ def main():
     explain_absence_data()
     get_absence_data()
     calculate_employment_days(employment_date)
-    print(f"print emp_days: {emp_days}")
     calculate_paid_vacation_days(emp_days)
 
 

@@ -4,9 +4,17 @@
 
 The Vacation Calculator is a helpful tool designed to assist users in calculating their entitlement to paid vacation days in accordance with the Swedish Vacation Act. By inputting specific parameters, users can determine the number of paid vacation days they will receive during a given vacation year.
 
-<h2 align="center"><img src="assets/images/vacation-calculator.png">
+<img align="center" src="assets/images/vacation-calculator.png">
 
 ## User Experience (UX)
+
+### Project Goals
+
+My goal with this application is to provide a user-friendly Vacation Calculator that ensures accurate and reliable calculations based on user input. 
+
+### Target Audience
+
+The target audience consists of employees working for employers covered by the Swedish Vacation Act. 
 
 ### User Stories
 
@@ -50,7 +58,7 @@ The flow chart largely corresponds to the final product except for the "Explain 
 - Explains the conditions
 - Let the user enter the vacation year
 
-<h2 align="center"><img src="assets/images/start_calculator.png">
+<img align="center" src="assets/images/start_calculator.png">
 
 #### Select and validate vacation year
 
@@ -60,31 +68,31 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 - When the user enters the employment date, the input is validated to ensure that it is in the correct date format.
 
-<h2 align="center"><img src="assets/images/enter-validate-employment-date.png">
+<img align="center" src="assets/images/enter-validate-employment-date.png">
 
 #### Enter and validate holiday entitlement
 
 - When the user enters their holiday entitlement the input is converted to an integer, the validate function controls that it is at least 25 days (which is the minimum by law) and that the format is correct.
 
-<h2 align="center"><img src="assets/images/enter-validate-holiday-entitlement.png">
+<img align="center" src="assets/images/enter-validate-holiday-entitlement.png">
 
 #### Explain absence data
 
 - Before the user can enter their absence data, they get a choice and a recommendation to read more about absence data. The user is responsible for entering correct absence data and should be aware of the rules that apply.
 
-<h3 align="center"><img src="assets/images/choose-explain-absence-data.png"></h3>
+<img align="center" src="assets/images/choose-explain-absence-data.png">
 
 - If the user choose to read more about absence data the following text is presented:
 
-<h3 align="center"><img src="assets/images/explain-absence-data-1.png"></h3>
-<h2 align="center"><img src="assets/images/explain-absence-data-2.png"></h2>
+<img align="center" src="assets/images/explain-absence-data-1.png">
+<img align="center" src="assets/images/explain-absence-data-2.png">
 
 
 #### Enter and validate absence data
 
 - When the user enters their absence data the input is converted to an integer. The validate function controls the format of the input and print out if it's not valid.
 
-<h2 align="center"><img src="assets/images/enter-validate-absence-data.png"></h2>
+<img align="center" src="assets/images/enter-validate-absence-data.png">
 
 #### Calculate employment days
 
@@ -134,7 +142,7 @@ https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 
 [The CI Python Linter](https://pep8ci.herokuapp.com/) displays "All clear, no errors found".
 
-<img src="assets/images/ci-python-linter.png">
+<img align="center" src="assets/images/ci-python-linter.png">
 
 ### User Stories Testing
 

@@ -38,6 +38,8 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 [View the Flow Chart of the project here.](https://www.canva.com/design/DAF-QQF54tg/LDPiva1vMDlR_EAO3aPBlw/view?utm_content=DAF-QQF54tg&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
+<img src="assets/images/flow-chart-vacation-calculator.png">
+
 ## Features
 
 ### Existing features

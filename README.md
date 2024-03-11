@@ -68,17 +68,20 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 - When the user enters the vacation year, the input is validated to ensure that it is in the correct date format.
 
+<img align="center" src="assets/images/enter-validate-vacation-year.png">
+
+
 #### Enter and validate employment date
 
 - When the user enters the employment date, the input is validated to ensure that it is in the correct date format.
 
-<img align="center" src="assets/images/enter-validate-employment-date.png">
+<img align="center" src="assets/images/enter-validate-employment-date-red.png">
 
 #### Enter and validate holiday entitlement
 
 - When the user enters their holiday entitlement the input is converted to an integer, the validate function controls that it is at least 25 days (which is the minimum by law) and that the format is correct.
 
-<img align="center" src="assets/images/enter-validate-holiday-entitlement.png">
+<img align="center" src="assets/images/enter-validate-holiday-entitlement-red.png">
 
 #### Explain absence data
 
@@ -88,8 +91,8 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 - If the user choose to read more about absence data the following text is presented:
 
-<img align="center" src="assets/images/explain-absence-data-1.png">
-<img align="center" src="assets/images/explain-absence-data-2.png">
+<img align="center" src="assets/images/explain-absence-data-1-green.png">
+<img align="center" src="assets/images/explain-absence-data-2-green.png">
 
 
 #### Enter and validate absence data
@@ -102,9 +105,11 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 - The function calculates how many employment days the user got during the vacation year by comparing the employment date with the last day of the vacation year.
 
-#### Calculate paid vacation days
+#### Calculate and display paid vacation days
 
-- The function calculates how many paid vacation days the user will get. It reduces leave of absence from total employment days. In the next step, the remaining days are related to the days in the current vacation year and are multiplied by the vacation entitlement. At last the result is being rounded up just as it should be according to the law.
+- The function calculates how many paid vacation days the user will get. It reduces leave of absence from total employment days. In the next step, the remaining days are related to the days in the current vacation year and are multiplied by the vacation entitlement. At last the result is being rounded up just as it should be according to the law. If there are unpaid vacation days they also will be displayed.
+
+<img align="center" src="assets/images/display-paid-vacation-days.png">
 
 ### Future Features
 

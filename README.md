@@ -115,7 +115,7 @@ The flow chart largely corresponds to the final product except for the "Explain 
 
 - Improved error handling for invalid number of days. Specifically, I want to address scenarios where the total number of days exceeds the total days in a year. For example, if a user starts their employment at the end of the year and has been absent for 300 days, the system will recognize that the total exceeds the available days in the year.
 
-- One possible future feature could be that allow the user to input the number of absence days they've taken for each absence category (such as sick leave, parental leave, etc.). The system will then determine whether these absences are eligible for calculating vacation pay. To achieve this, the system will have functions that calculate which days should be included or excluded from the vacation pay calculation.
+- One possible future feature could be that allow the user to input the number of absence days they've taken for each absence category (such as sick leave, parental leave, etc.). The system will then determine whether these absences are eligible for calculating vacation pay. To achieve this, the system will have functions that calculate which days should be included or excluded from the vacation calculation.
 
 ## Technologies Used
 

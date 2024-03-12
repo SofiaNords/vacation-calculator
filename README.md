@@ -150,6 +150,15 @@ https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
 
 https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 
+### Other Technologies Used
+
+- [Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+- [GitHub](https://github.com/) is used to store the projects code after being pushed from Git.
+
+- [Heroku](https://heroku.com/) was used for deployment of the application.
+
+- [CI Python Linter](https://pep8ci.herokuapp.com/) was used for checking PEP8 errors.
 
 ## Testing
 

@@ -218,14 +218,19 @@ Once the user has provided all the requested input, the number of paid and unpai
 
 The app was deployed through Heroku. The steps are as following:
 
-1. Log into Github and locate Github Repository.
-2. After creating a Heroku account, click "New" to create a new app from the dashboard.
-3. Create a unique name for the app and select your region: press "Create app".
-4. Go to settings and add the necessary Config_vars and buildpacks. Ensure that the buildpacks are set to Python and NodeJS (in that order).
-5. Click Deploy.
-6. Scroll Down to Deployment Method and select GitHub.
-7. Select the name of the repository from Github to be deployed and connect to Heroku.
-8. Scroll down to the deploy options: Click enable Automatic deploys (Will Update Automatically with every "git push"). This was chosen for this project.
+1. Add a new line character at the end of the text inside the input method. Without this extra line, the text for the input request will not show up in the terminal.
+
+2. Update the requirements.txt file with colorama and pyfiglet so that Heroku can install these dependencies.
+
+3. Create a Heroku account.
+
+4. Create a new app from Heroku dashboard.
+
+5. Go to Settings and add Config Vars and Buildpacks. Below Config Vars add PORT to KEY and 8000 to VALUE. Below Buildpacks add Python and NodeJS (in that order).
+
+6. Go to Deploy section. Choose GitHub as deployment method. Search for the repository name and click "Connect" to link the Heroku app to the GitHub repository code. 
+
+7. Scroll down to the deploy options. Click "Enable Automatic Deploys". This option will update the Heroku app with every "git push" which was chosen for this project. 
 
 ## Credits
 

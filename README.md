@@ -2,7 +2,7 @@
 
 [View the live project here.](https://vacation-calculator-0f929794e117.herokuapp.com/)
 
-The Vacation Calculator is a helpful tool designed to assist users in calculating their entitlement to paid vacation days in accordance with the Swedish Vacation Act. By inputting specific parameters, users can determine the number of paid vacation days they will receive during a given vacation year.
+The Vacation Calculator is a helpful tool designed to assist users in calculating their entitlement to paid vacation days in compliance with the Swedish Vacation Act. By inputting specific parameters, users can determine the number of paid vacation days they will receive during a given vacation year.
 
 <img align="center" src="assets/images/vacation-calculator.png">
 
@@ -165,41 +165,45 @@ https://stackoverflow.com/questions/46349444/how-to-add-color-to-text-in-python
 
 1. As a First Time Visitor, I want to easily understand the main purpose of the application.
 
-        When users launch the application, they are greeted with a brief and clear information message. The text explains that the app functions as a vacation days calculator, specifically tailored to Swedish vacation law. It assumes that the preceding year serves as the qualifying year for calculating paid vacation days.
+When users launch the application, they are greeted with a brief and clear information message. The text explains that the app functions as a vacation days calculator, specifically tailored to Swedish vacation law. It assumes that the preceding year serves as the qualifying year for calculating paid vacation days.
 
 2. As a First Time Visitor, I want to know right away how to start and a clear and concise step-by-step guidance in how to use the application.
 
-        The user is asked to enter the vacation year they want to calculate in the first step right after the information text. In the following steps the user is asked to enter employment date, holiday entitlement etc.
+The user is asked to enter the vacation year they want to calculate in the first step right after the information text. In the following steps the user is asked to enter employment date, holiday entitlement etc.
 
 3. As a First Time Visitor, I want feedback if my input is not correct in some way.
 
-        If the user enters a vacation year, an employment date or a holiday entitlement in the wrong format an error messege appears that encourage the user to try again.
+If the user enters a vacation year, an employment date or a holiday entitlement in the wrong format an error messege appears that encourage the user to try again.
 
 4. As a First Time Visitor, I want to be able to get more detailed information about rules in the Swedish Vacation Act.
 
-        The user get's a choice and a recommendation to read more about absence data. If the user enters y (yes) a detailed description of certain types of absence that qualifies for vacation pay appears.
+The user get's a choice and a recommendation to read more about absence data. If the user enters y (yes) a detailed description of certain types of absence that qualifies for vacation pay appears.
 
 5. As a First Time Visistor, I want the result, the number of paid vacation days presented to me.
 
-        Once the user has provided all the requested input, the number of paid and unpaid vacation days is presented to the user.
+Once the user has provided all the requested input, the number of paid and unpaid vacation days is presented to the user.
 
 #### Returning Visitor Goals
 
 1. As a Returning Visitor, I want to be able to start the calculations right away and follow a clear and concise step-by-step guidance in how to use the application.
 
-        The user is asked to enter the vacation year they want to calculate in the first step right after the information text. In the following steps the user is asked to enter employment date, holiday entitlement etc.
+The user is asked to enter the vacation year they want to calculate in the first step right after the information text. In the following steps the user is asked to enter employment date, holiday entitlement etc.
 
 2. As a Returning Visitor, I want feedback if my input is not correct in some way.
 
-        If the user enters a vacation year, an employment date or a holiday entitlement in the wrong format an error messege appears that encourage the user to try again.
+If the user enters a vacation year, an employment date or a holiday entitlement in the wrong format an error messege appears that encourage the user to try again.
 
 3. As a Returning Visitor, I want to be able to choose if I want more detailed information about the rules in the Swedish Vacation Act or not. 
 
-        The user get's a choice and a recommendation to read more about absence data. If the user already knows about the absence data rules they can enter n (no) and proceed and enter their absence data.
+The user get's a choice and a recommendation to read more about absence data. If the user already knows about the absence data rules they can enter n (no) and proceed and enter their absence data.
 
 4. As a Returning Visitor, I want the result, the number of paid vacation days presented to me.
 
-         Once the user has provided all the requested input, the number of paid and unpaid vacation days is presented to the user.
+Once the user has provided all the requested input, the number of paid and unpaid vacation days is presented to the user.
+
+### Further Testing
+
+- A large amount of testing was done to ensure that the application functions work as intended.
 
 ## Deployment
 
